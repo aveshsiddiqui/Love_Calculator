@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Love Calculator ❤</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1 class="title">❤ Love Calculator</h1>
+<p class="subtitle">Find out your love compatibility</p>
+</div>
+
+
+<div class="controls">
+<button class="dark-mode-toggle" id="darkToggle" aria-pressed="false">🌙 Dark Mode</button>
+<button class="theme-btn" id="themeBtn" style="width:auto;">🎨 Theme</button>
+</div>
+
+
+<div class="color-picker-group" id="colorPicker">
+<div class="color-option selected" data-primary="#ff6b9d" data-secondary="#c44569" data-name="romantic" style="background: linear-gradient(135deg, #ff6b9d, #c44569);"></div>
+<div class="color-option" data-primary="#667eea" data-secondary="#764ba2" data-name="purple" style="background: linear-gradient(135deg, #667eea, #764ba2);"></div>
+<div class="color-option" data-primary="#f093fb" data-secondary="#f5576c" data-name="passion" style="background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
+<div class="color-option" data-primary="#fa709a" data-secondary="#fee140" data-name="warm" style="background: linear-gradient(135deg, #fa709a, #fee140);"></div>
+<div class="color-option" data-primary="#30cfd0" data-secondary="#330867" data-name="cool" style="background: linear-gradient(135deg, #30cfd0, #330867);"></div>
+<div class="color-option" data-primary="#a8edea" data-secondary="#fed6e3" data-name="sweet" style="background: linear-gradient(135deg, #a8edea, #fed6e3);"></div>
+</div>
+
+
+<div class="input-group">
+<label for="name1">Your Name</label>
+<input type="text" id="name1" placeholder="Enter your name" />
+</div>
+
+
+<div class="input-group">
+<label for="name2">Partner's Name</label>
+<input type="text" id="name2" placeholder="Enter their name" />
+</div>
+
+
+<button class="calculate-btn" id="calcBtn">Calculate Love ❤</button>
+
+
+<div class="result" id="result" aria-live="polite">
+<div class="heart-icon">💕</div>
+<div id="resultSubtitle" class="subtitle-small">Your Love Percentage</div>
+<div class="percentage" id="percentage">0%</div>
+<div class="progress-bar" aria-hidden="true">
+<div class="progress-fill" id="progressFill"></div>
+</div>
+<div class="message" id="message"></div>
+<div class="names" id="names"></div>
+<button class="reset-btn" id="resetBtn">Try Again</button>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
